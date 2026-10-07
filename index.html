@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brew & Bloom Café - Fresh Brews, Good Food, Better Moments. A cozy local café on Avinashi Road, Coimbatore for students, professionals, and families.">
+  <title>Brew & Bloom Café | Fresh Brews. Good Food. Better Moments.</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%200%20100%20100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" role="complementary">
+    <div class="container bar-content">
+      <span class="badge-pill">Academic Project Demo</span>
+      <span>🌱 Visit us at 123, Avinashi Road, Coimbatore | Open Daily: 8:00 AM – 10:00 PM</span>
+      <a href="tel:+919876543210" class="bar-phone">📞 +91 98765 43210</a>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Brew and Bloom Café Home">
+        <span class="logo-icon">☕</span>
+        <div class="logo-text">
+          <span class="logo-title">Brew & Bloom</span>
+          <span class="logo-subtitle">Café • Coimbatore</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#special" class="nav-link">Today's Special</a></li>
+          <li><a href="#offers" class="nav-link">Offers</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#reservation" class="nav-link">Reservation</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-cta">
+          <a href="#reservation" class="btn btn-primary btn-sm nav-reserve-btn">Reserve a Table</a>
+        </div>
+      </nav>
+
+      <!-- Right Action & Hamburger -->
+      <div class="nav-actions">
+        <a href="#reservation" class="btn btn-primary btn-sm desktop-only">Reserve a Table</a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Open Today • 8 AM – 10 PM</span>
+        </div>
+        <h1 class="hero-title">
+          Your Cozy Corner for <span class="text-highlight">Coffee, Food</span> & Conversations
+        </h1>
+        <p class="hero-description">
+          Freshly brewed artisan coffee, comforting gourmet food, and a warm, inviting space in Coimbatore to relax, work, and connect with people who matter.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary">
+            <span>Explore Menu</span>
+            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#reservation" class="btn btn-secondary">Reserve a Table</a>
+        </div>
+        
+        <!-- Social Proof Stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">4.8 ★</span>
+            <span class="stat-label">Customer Rating</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Arabica Beans</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">Free</span>
+            <span class="stat-label">High-Speed Wi-Fi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img 
+            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80" 
+            alt="Warm inviting atmosphere at Brew & Bloom Café" 
+            class="hero-img"
+            loading="eager"
+          >
+          <div class="hero-floating-card top-card">
+            <span class="floating-icon">☕</span>
+            <div>
+              <strong>Freshly Brewed</strong>
+              <small>Roasted Locally</small>
+            </div>
+          </div>
+          <div class="hero-floating-card bottom-card">
+            <span class="floating-icon">✨</span>
+            <div>
+              <strong>Avinashi Road</strong>
+              <small>Peelamedu, Coimbatore</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Our Story & Ambience</span>
+        <h2 class="section-title">More Than Just Coffee</h2>
+        <div class="title-divider"></div>
+        <p class="section-subtitle">
+          Brew & Bloom was founded on a simple belief: the best moments happen over a warm cup of coffee and unhurried conversations.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-card">
+          <img 
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" 
+            alt="Brew & Bloom welcoming interior space"
+            class="about-img"
+            loading="lazy"
+          >
+          <div class="about-overlay-quote">
+            <p>“Where college friendships blossom, remote ideas take flight, and peaceful coffee rituals begin.”</p>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <h3 class="about-subheading">A Cozy Community Haven in Coimbatore</h3>
+          <p class="about-text">
+            Nestled on Avinashi Road, Brew & Bloom Café is designed as a sanctuary away from the hustle of the city. Whether you are a college student prepping for exams, a remote professional needing reliable power plugs, or friends catching up over wood-fired style pizzas and artisan cold brews, our doors are always open.
+          </p>
+          <p class="about-text">
+            We partner with ethical coffee estates across South India to bring you hand-picked Arabica beans roasted to perfection, paired with fresh, preservative-free snacks prepared right in our kitchen.
+          </p>
+
+          <div class="highlights-grid">
+            <div class="highlight-card">
+              <span class="highlight-icon">☕</span>
+              <div>
+                <h4>Freshly Brewed</h4>
+                <p>100% single-origin beans ground fresh for every order.</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-icon">🍰</span>
+              <div>
+                <h4>Made with Care</h4>
+                <p>Small-batch handcrafted pastries, gourmet pasta & wraps.</p>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-icon">💻</span>
+              <div>
+                <h4>Work-Friendly Space</h4>
+                <p>Ergonomic seating, abundant plug points & fast Wi-Fi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="section why-us-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">The Brew & Bloom Difference</span>
+        <h2 class="section-title">Why Guests Love Us</h2>
+        <div class="title-divider"></div>
+        <p class="section-subtitle">Crafted with attention to detail so you can enjoy every visit effortlessly.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <span class="feature-emoji">🌿</span>
+          </div>
+          <h3 class="feature-title">Fresh Ingredients</h3>
+          <p class="feature-desc">
+            We source fresh dairy, crisp veggies, and premium cocoa daily. No artificial syrups or compromises.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <span class="feature-emoji">🛋️</span>
+          </div>
+          <h3 class="feature-title">Comfortable Space</h3>
+          <p class="feature-desc">
+            Thoughtfully zoned seating: cozy reading nooks, group lounge tables, and quiet laptop corners.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <span class="feature-emoji">🏷️</span>
+          </div>
+          <h3 class="feature-title">Affordable Prices</h3>
+          <p class="feature-desc">
+            Premium café quality priced thoughtfully for students and everyday coffee lovers in Coimbatore.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <span class="feature-emoji">🤝</span>
+          </div>
+          <h3 class="feature-title">Friendly Service</h3>
+          <p class="feature-desc">
+            Our passionate baristas remember your preferences and greet every guest with a warm, genuine smile.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Today's Special Section (Dynamic JS) -->
+  <section class="section special-section" id="special">
+    <div class="container">
+      <div class="special-card-wrapper">
+        <div class="special-badge-header">
+          <span class="special-pill">⚡ Today's Daily Deal</span>
+          <span class="special-day-indicator" id="special-day-name">Loading Today's Special...</span>
+        </div>
+
+        <div class="special-content-grid">
+          <div class="special-info">
+            <span class="special-subtitle" id="special-tagline">Curated Deal for Today</span>
+            <h2 class="special-title" id="special-combo-name">Special Offer Loading...</h2>
+            <p class="special-description" id="special-combo-desc">
+              Checking the calendar to bring you today's freshly discounted café special.
+            </p>
+            
+            <div class="special-price-box">
+              <span class="special-current-price" id="special-price">₹199</span>
+              <span class="special-original-price" id="special-orig-price">₹260</span>
+              <span class="special-save-badge" id="special-discount-badge">Save ₹61</span>
+            </div>
+
+            <div class="special-actions">
+              <a href="#reservation" class="btn btn-primary" id="special-reserve-btn">
+                <span>Reserve This Deal</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <span class="special-note">⏰ Available Today Only • Dine-in & Takeaway</span>
+            </div>
+          </div>
+
+          <div class="special-image-container">
+            <div class="special-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" 
+                alt="Today's Special Combo" 
+                id="special-image"
+                class="special-img"
+                loading="lazy"
+              >
+              <div class="special-floating-badge" id="special-pill-text">Chef's Choice</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section with Dynamic JavaScript Filtering -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Handcrafted Offerings</span>
+        <h2 class="section-title">Our Menu</h2>
+        <div class="title-divider"></div>
+        <p class="section-subtitle">
+          Explore our wide range of freshly brewed coffees, soothing teas, savory snacks, and delectable desserts.
+        </p>
+      </div>
+
+      <!-- Menu Category Filters -->
+      <div class="menu-filter-container">
+        <button class="filter-btn active" data-category="all">All Items</button>
+        <button class="filter-btn" data-category="coffee">☕ Coffee</button>
+        <button class="filter-btn" data-category="tea">🍵 Tea</button>
+        <button class="filter-btn" data-category="snacks">🥪 Snacks</button>
+        <button class="filter-btn" data-category="main-course">🍝 Main Course</button>
+        <button class="filter-btn" data-category="desserts">🍰 Desserts</button>
+      </div>
+
+      <!-- Menu Grid Items -->
+      <div class="menu-grid" id="menu-grid">
+
+        <!-- 1. Cappuccino -->
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80" alt="Cappuccino" class="menu-item-img" loading="lazy">
+            <span class="menu-tag">Bestseller</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Cappuccino</h3>
+              <span class="menu-item-price">₹120</span>
+            </div>
+            <p class="menu-item-desc">Rich double espresso topped with dense, velvety microfoam and a dusting of dark chocolate.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegetarian</span>
+              <a href="#reservation" class="menu-order-link" data-item="Cappuccino">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Cold Coffee -->
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80" alt="Signature Cold Coffee" class="menu-item-img" loading="lazy">
+            <span class="menu-tag">Favorite</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Cold Coffee</h3>
+              <span class="menu-item-price">₹140</span>
+            </div>
+            <p class="menu-item-desc">Our signature thick chilled espresso blended with fresh dairy cream, Madagascar vanilla, and crushed ice.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegetarian</span>
+              <a href="#reservation" class="menu-order-link" data-item="Cold Coffee">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Café Latte -->
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=600&q=80" alt="Café Latte" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Café Latte</h3>
+              <span class="menu-item-price">₹130</span>
+            </div>
+            <p class="menu-item-desc">Smooth, milky espresso drink delicately layered with gentle steamed milk and artisan latte art.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegetarian</span>
+              <a href="#reservation" class="menu-order-link" data-item="Café Latte">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Caramel Macchiato -->
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&q=80" alt="Caramel Macchiato" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Caramel Macchiato</h3>
+              <span class="menu-item-price">₹150</span>
+            </div>
+            <p class="menu-item-desc">Freshly steamed milk marked with bold espresso shots and drizzled generously with buttery caramel.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegetarian</span>
+              <a href="#reservation" class="menu-order-link" data-item="Caramel Macchiato">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Masala Tea -->
+        <article class="menu-card" data-category="tea">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Masala Tea" class="menu-item-img" loading="lazy">
+            <span class="menu-tag">Desi Blend</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Masala Tea</h3>
+              <span class="menu-item-price">₹70</span>
+            </div>
+            <p class="menu-item-desc">Traditional slow-brewed Nilgiri tea infused with aromatic cardamom, fresh crushed ginger, and whole spices.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegetarian</span>
+              <a href="#reservation" class="menu-order-link" data-item="Masala Tea">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Green Tea -->
+        <article class="menu-card" data-category="tea">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?auto=format&fit=crop&w=600&q=80" alt="Organic Green Tea" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Green Tea</h3>
+              <span class="menu-item-price">₹80</span>
+            </div>
+            <p class="menu-item-desc">Antioxidant-packed whole organic green tea leaves brewed with real lemon essence and organic honey.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegan Friendly</span>
+              <a href="#reservation" class="menu-order-link" data-item="Green Tea">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Veg Sandwich -->
+        <article class="menu-card" data-category="snacks">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80" alt="Grilled Veg Sandwich" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Veg Sandwich</h3>
+              <span class="menu-item-price">₹110</span>
+            </div>
+            <p class="menu-item-desc">Toasted whole-wheat sandwich loaded with crisp cucumbers, tomatoes, mint chutney, and molten cheddar.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegetarian</span>
+              <a href="#reservation" class="menu-order-link" data-item="Veg Sandwich">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. French Fries -->
+        <article class="menu-card" data-category="snacks">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80" alt="Crispy French Fries" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">French Fries</h3>
+              <span class="menu-item-price">₹100</span>
+            </div>
+            <p class="menu-item-desc">Double-fried golden potato batons tossed in mild peri-peri spice and served with garlic herb dip.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegan Friendly</span>
+              <a href="#reservation" class="menu-order-link" data-item="French Fries">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Paneer Wrap -->
+        <article class="menu-card" data-category="snacks">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80" alt="Tandoori Paneer Wrap" class="menu-item-img" loading="lazy">
+            <span class="menu-tag">Popular</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Paneer Wrap</h3>
+              <span class="menu-item-price">₹150</span>
+            </div>
+            <p class="menu-item-desc">Marinated roasted cottage cheese cubes wrapped with crunchy bell peppers, onions, and smoky chipotle mayo.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegetarian</span>
+              <a href="#reservation" class="menu-order-link" data-item="Paneer Wrap">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. White Sauce Pasta -->
+        <article class="menu-card" data-category="main-course">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=600&q=80" alt="Creamy White Sauce Pasta" class="menu-item-img" loading="lazy">
+            <span class="menu-tag">Chef's Special</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">White Sauce Pasta</h3>
+              <span class="menu-item-price">₹180</span>
+            </div>
+            <p class="menu-item-desc">Penne pasta tossed in a silky parmesan béchamel sauce with sweet corn, sauteed mushrooms, and Italian herbs.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegetarian</span>
+              <a href="#reservation" class="menu-order-link" data-item="White Sauce Pasta">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11. Veg Pizza -->
+        <article class="menu-card" data-category="main-course">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Gourmet Veg Pizza" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Veg Pizza</h3>
+              <span class="menu-item-price">₹220</span>
+            </div>
+            <p class="menu-item-desc">Hand-stretched thin crust baked with san marzano tomato sauce, fresh mozzarella, black olives, and bell peppers.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegetarian</span>
+              <a href="#reservation" class="menu-order-link" data-item="Veg Pizza">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. Chocolate Brownie -->
+        <article class="menu-card" data-category="desserts">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Warm Chocolate Brownie" class="menu-item-img" loading="lazy">
+            <span class="menu-tag">Bestseller</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Chocolate Brownie</h3>
+              <span class="menu-item-price">₹100</span>
+            </div>
+            <p class="menu-item-desc">Warm Belgian chocolate fudge brownie served with a drizzle of warm ganache and crushed roasted walnuts.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegetarian</span>
+              <a href="#reservation" class="menu-order-link" data-item="Chocolate Brownie">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 13. Pancakes -->
+        <article class="menu-card" data-category="desserts">
+          <div class="menu-card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=600&q=80" alt="Fluffy Pancakes" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-header-line">
+              <h3 class="menu-item-title">Fluffy Pancakes</h3>
+              <span class="menu-item-price">₹150</span>
+            </div>
+            <p class="menu-item-desc">A golden stack of three fluffy buttermilk pancakes served with real butter, maple syrup, and seasonal berries.</p>
+            <div class="menu-card-footer">
+              <span class="diet-tag veg"><span class="diet-dot"></span> Vegetarian</span>
+              <a href="#reservation" class="menu-order-link" data-item="Fluffy Pancakes">Reserve Table →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers Section -->
+  <section class="section offers-section" id="offers">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Value Combos</span>
+        <h2 class="section-title">Exclusive Café Combos</h2>
+        <div class="title-divider"></div>
+        <p class="section-subtitle">
+          Curated meal combinations offering the best flavors at pocket-friendly student and work-hour prices.
+        </p>
+      </div>
+
+      <div class="offers-grid">
+        <!-- Combo 1: Student Combo -->
+        <div class="offer-card">
+          <div class="offer-card-tag">Student Special</div>
+          <h3 class="offer-title">Student Combo</h3>
+          <p class="offer-pair">Coffee + Grilled Sandwich</p>
+          <div class="offer-pricing">
+            <span class="offer-price">₹149</span>
+            <span class="offer-orig">₹230</span>
+          </div>
+          <p class="offer-description">
+            Your ideal study fuel. Any regular hot coffee or iced brew paired with our classic crispy grilled vegetable sandwich.
+          </p>
+          <ul class="offer-perks">
+            <li>✓ Free High-Speed WiFi & Charging Access</li>
+            <li>✓ Valid on showing any College ID card</li>
+            <li>✓ Available all week (11 AM – 7 PM)</li>
+          </ul>
+          <a href="#reservation" class="btn btn-outline offer-btn" data-combo="Student Combo (₹149)">Book Table for Combo</a>
+        </div>
+
+        <!-- Combo 2: Couple Combo (Featured) -->
+        <div class="offer-card featured">
+          <div class="offer-card-badge">Most Popular</div>
+          <div class="offer-card-tag">Date & Hangout</div>
+          <h3 class="offer-title">Couple Combo</h3>
+          <p class="offer-pair">2 Coffees + 1 Dessert</p>
+          <div class="offer-pricing">
+            <span class="offer-price">₹299</span>
+            <span class="offer-orig">₹390</span>
+          </div>
+          <p class="offer-description">
+            Designed for shared conversations. Choose any two signature coffees and share our decadent warm chocolate brownie or pancakes.
+          </p>
+          <ul class="offer-perks">
+            <li>✓ Cozy booth seating guarantee</li>
+            <li>✓ Choice of hot or chilled specialty drinks</li>
+            <li>✓ Perfect for evening dates & long talks</li>
+          </ul>
+          <a href="#reservation" class="btn btn-primary offer-btn" data-combo="Couple Combo (₹299)">Book Table for Combo</a>
+        </div>
+
+        <!-- Combo 3: Workday Combo -->
+        <div class="offer-card">
+          <div class="offer-card-tag">Work & Relax</div>
+          <h3 class="offer-title">Workday Combo</h3>
+          <p class="offer-pair">Coffee + Snack</p>
+          <div class="offer-pricing">
+            <span class="offer-price">₹179</span>
+            <span class="offer-orig">₹240</span>
+          </div>
+          <p class="offer-description">
+            Power through meetings and deadlines. Pair a soothing Café Latte or Masala Tea with peri-peri fries or crispy snacks.
+          </p>
+          <ul class="offer-perks">
+            <li>✓ Dedicated quiet workspace area</li>
+            <li>✓ Unlimited table water & napkins</li>
+            <li>✓ Available Monday through Friday</li>
+          </ul>
+          <a href="#reservation" class="btn btn-outline offer-btn" data-combo="Workday Combo (₹179)">Book Table for Combo</a>
+        </div>
+      </div>
+
+      <div class="offers-disclaimer text-center">
+        <p>ℹ️ <em>Offers are demo simulation content crafted for this college project website.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery with Simple JS Lightbox -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Visual Walkthrough</span>
+        <h2 class="section-title">Glimpses of Brew & Bloom</h2>
+        <div class="title-divider"></div>
+        <p class="section-subtitle">
+          Step into our warm sanctuary through our café gallery. Click on any picture to view it full screen.
+        </p>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- 1. Café Exterior -->
+        <div class="gallery-item" data-index="0" data-caption="Brew & Bloom storefront on Avinashi Road, Coimbatore">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Café Exterior" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <span class="gallery-text">Café Exterior</span>
+          </div>
+        </div>
+
+        <!-- 2. Artisan Coffee Pour -->
+        <div class="gallery-item" data-index="1" data-caption="Artisan hand-poured coffee crafted with freshly roasted Arabica beans">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Fresh Pour-over Coffee" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <span class="gallery-text">Artisan Coffee</span>
+          </div>
+        </div>
+
+        <!-- 3. Fresh Food -->
+        <div class="gallery-item" data-index="2" data-caption="Freshly baked artisan treats and warm savory bites prepared daily">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Fresh Bakes and Food" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <span class="gallery-text">Fresh Bakes</span>
+          </div>
+        </div>
+
+        <!-- 4. Cozy Interior -->
+        <div class="gallery-item" data-index="3" data-caption="Comfortable rustic wooden seating, warm lighting and ambient music">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="Cozy Café Interior" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <span class="gallery-text">Cozy Interior</span>
+          </div>
+        </div>
+
+        <!-- 5. Indulgent Dessert -->
+        <div class="gallery-item" data-index="4" data-caption="Decadent pastries and chocolate delicacies crafted with love">
+          <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80" alt="Handcrafted Desserts" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <span class="gallery-text">Sweet Delights</span>
+          </div>
+        </div>
+
+        <!-- 6. Customers Sitting in Café -->
+        <div class="gallery-item" data-index="5" data-caption="Students, friends and remote workers connecting over good coffee">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Customers enjoying coffee and conversations" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-icon">🔍</span>
+            <span class="gallery-text">Our Community</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Component (Pure JS/CSS) -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image view" hidden>
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightbox-img" class="lightbox-img">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+        <span class="lightbox-counter" id="lightbox-counter">1 / 6</span>
+      </div>
+      <button class="lightbox-nav prev" id="lightbox-prev" aria-label="Previous Image">&#10094;</button>
+      <button class="lightbox-nav next" id="lightbox-next" aria-label="Next Image">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Guest Experiences</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+        <div class="title-divider"></div>
+        <p class="section-subtitle">Real feedback from local students, remote professionals, and weekend regulars.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <blockquote class="testimonial-quote">
+            “A perfect place to study with great coffee and dependable Wi-Fi. The Masala Chai and brownies kept me powered throughout my final exam week!”
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div class="author-info">
+              <strong>Ananya S.</strong>
+              <span>College Student, PSG Tech</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <blockquote class="testimonial-quote">
+            “Loved the ambience and the creamy white sauce pasta! Best hangout spot on Avinashi Road. Staff is super warm and polite.”
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div class="author-info">
+              <strong>Rahul M.</strong>
+              <span>Software Engineer, Peelamedu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <blockquote class="testimonial-quote">
+            “Very peaceful place for weekend conversations and reading. The artisan cold brew is hands down the best in Coimbatore!”
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">P</div>
+            <div class="author-info">
+              <strong>Priya K.</strong>
+              <span>Local Resident & Book Enthusiast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="testimonials-note text-center">
+        <small><em>Note: Customer testimonials are demo representations created for this college project.</em></small>
+      </p>
+    </div>
+  </section>
+
+  <!-- Reservation Section (Interactive Vanilla JS Form) -->
+  <section class="section reservation-section" id="reservation">
+    <div class="container">
+      <div class="reservation-card-container">
+        <div class="reservation-grid">
+          
+          <!-- Left Info Box -->
+          <div class="reservation-info">
+            <span class="section-tag-light">Table Booking</span>
+            <h2 class="reservation-title">Reserve Your Table</h2>
+            <p class="reservation-desc">
+              Planning a casual meet-up, a focused work session, or a weekend coffee date? Reserve your spot in advance to avoid waiting.
+            </p>
+
+            <div class="reservation-highlights">
+              <div class="res-highlight-item">
+                <span class="res-icon">⚡</span>
+                <div>
+                  <strong>Instant Confirmation Request</strong>
+                  <p>Our host team will call or WhatsApp you within 15 minutes.</p>
+                </div>
+              </div>
+
+              <div class="res-highlight-item">
+                <span class="res-icon">🎉</span>
+                <div>
+                  <strong>Special Requests Welcomed</strong>
+                  <p>Celebrating a birthday or need extra power sockets? Let us know.</p>
+                </div>
+              </div>
+
+              <div class="res-highlight-item">
+                <span class="res-icon">📍</span>
+                <div>
+                  <strong>Zero Booking Fee</strong>
+                  <p>Free table reservation with up to 15 minutes hold time.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="urgent-booking-box">
+              <p>Need a table right now?</p>
+              <a href="tel:+919876543210" class="btn btn-outline-light btn-sm">📞 Call +91 98765 43210</a>
+            </div>
+          </div>
+
+          <!-- Right Interactive Form -->
+          <div class="reservation-form-box">
+            <form id="reservation-form" class="reservation-form" novalidate>
+              <h3 class="form-heading">Book a Table</h3>
+              <p class="form-subheading">Fill in the quick details below for demo reservation:</p>
+
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="res-name">Full Name <span class="req">*</span></label>
+                <input 
+                  type="text" 
+                  id="res-name" 
+                  name="fullName" 
+                  class="form-control" 
+                  placeholder="e.g. Ramesh Kumar" 
+                  required
+                >
+                <div class="error-msg" id="error-name">Please enter your name (at least 2 characters).</div>
+              </div>
+
+              <!-- Phone Field -->
+              <div class="form-group">
+                <label for="res-phone">Phone Number <span class="req">*</span></label>
+                <input 
+                  type="tel" 
+                  id="res-phone" 
+                  name="phoneNumber" 
+                  class="form-control" 
+                  placeholder="e.g. 98765 43210" 
+                  required
+                >
+                <div class="error-msg" id="error-phone">Please enter a valid 10-digit phone number.</div>
+              </div>
+
+              <!-- Date & Time Row -->
+              <div class="form-row">
+                <div class="form-group col-half">
+                  <label for="res-date">Date <span class="req">*</span></label>
+                  <input 
+                    type="date" 
+                    id="res-date" 
+                    name="date" 
+                    class="form-control" 
+                    required
+                  >
+                  <div class="error-msg" id="error-date">Please select today or a future date.</div>
+                </div>
+
+                <div class="form-group col-half">
+                  <label for="res-time">Time <span class="req">*</span></label>
+                  <select id="res-time" name="time" class="form-control" required>
+                    <option value="">Select Time</option>
+                    <option value="08:30 AM">08:30 AM (Breakfast)</option>
+                    <option value="10:00 AM">10:00 AM (Morning Brew)</option>
+                    <option value="11:30 AM">11:30 AM</option>
+                    <option value="01:00 PM">01:00 PM (Lunch)</option>
+                    <option value="02:30 PM">02:30 PM</option>
+                    <option value="04:00 PM">04:00 PM (Tea & Snacks)</option>
+                    <option value="05:30 PM">05:30 PM (Evening Hangout)</option>
+                    <option value="07:00 PM">07:00 PM (Dinner & Coffee)</option>
+                    <option value="08:30 PM">08:30 PM (Late Chill)</option>
+                  </select>
+                  <div class="error-msg" id="error-time">Please select your preferred time.</div>
+                </div>
+              </div>
+
+              <!-- Guests & Occasion Row -->
+              <div class="form-row">
+                <div class="form-group col-half">
+                  <label for="res-guests">Number of Guests <span class="req">*</span></label>
+                  <select id="res-guests" name="guests" class="form-control" required>
+                    <option value="">Select Guests</option>
+                    <option value="1 Guest">1 Guest (Solo Study/Work)</option>
+                    <option value="2 Guests">2 Guests (Couple / Pair)</option>
+                    <option value="3 Guests">3 Guests</option>
+                    <option value="4 Guests">4 Guests (Group Table)</option>
+                    <option value="5-8 Guests">5 – 8 Guests (Big Gathering)</option>
+                    <option value="8+ Guests">8+ Guests (Party Request)</option>
+                  </select>
+                  <div class="error-msg" id="error-guests">Please select number of guests.</div>
+                </div>
+
+                <div class="form-group col-half">
+                  <label for="res-seating">Seating Preference</label>
+                  <select id="res-seating" name="seating" class="form-control">
+                    <option value="Standard Table">Any Available Table</option>
+                    <option value="Window Corner">Window Corner</option>
+                    <option value="Work Desk with Power">Quiet Desk with Power</option>
+                    <option value="Outdoor Terrace">Outdoor Garden Balcony</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Special Request Field -->
+              <div class="form-group">
+                <label for="res-notes">Special Request (Optional)</label>
+                <textarea 
+                  id="res-notes" 
+                  name="notes" 
+                  rows="2" 
+                  class="form-control" 
+                  placeholder="e.g. Celebrating a friend's birthday / Need quiet corner for work / Request Today's Special offer"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                <span>Request Table Reservation</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+
+              <div class="form-demo-notice">
+                <small>🔒 Demo mode: No backend server required. Your submission is validated locally by JavaScript.</small>
+              </div>
+            </form>
+
+            <!-- Friendly JS Success Confirmation Card (Initially Hidden) -->
+            <div class="reservation-success-card" id="reservation-success" hidden>
+              <div class="success-icon-badge">✅</div>
+              <h3 class="success-title">Reservation Request Received!</h3>
+              <p class="success-message" id="success-message-text">
+                Thank you! Your table request has been received. The café team will contact you shortly.
+              </p>
+              
+              <div class="summary-box" id="reservation-summary">
+                <!-- Populated via JS -->
+              </div>
+
+              <div class="success-action-group">
+                <button type="button" class="btn btn-secondary btn-sm" id="book-another-btn">Make Another Reservation</button>
+                <a href="#menu" class="btn btn-primary btn-sm">Browse Menu While You Wait</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Operating Hours Section -->
+  <section class="section location-section" id="location">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Find Us in Coimbatore</span>
+        <h2 class="section-title">Visit Brew & Bloom</h2>
+        <div class="title-divider"></div>
+        <p class="section-subtitle">
+          Located on the vibrant Avinashi Road corridor, easily accessible by public transit, car, or bike.
+        </p>
+      </div>
+
+      <div class="location-grid">
+        <!-- Location Information Cards -->
+        <div class="location-info-wrapper">
+          <div class="loc-card">
+            <div class="loc-icon-circle">📍</div>
+            <div class="loc-card-content">
+              <h3>Café Address</h3>
+              <p class="loc-main-text">123, Avinashi Road, Peelamedu</p>
+              <p class="loc-sub-text">Coimbatore, Tamil Nadu – 641004</p>
+              <span class="loc-landmark">Landmark: Opposite Tech Hub, near PSG Steps</span>
+            </div>
+          </div>
+
+          <div class="loc-card">
+            <div class="loc-icon-circle">⏰</div>
+            <div class="loc-card-content">
+              <h3>Opening Hours</h3>
+              <div class="hours-row">
+                <span class="day-col">Monday – Friday:</span>
+                <span class="time-col">8:00 AM – 10:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day-col">Saturday – Sunday:</span>
+                <span class="time-col">9:00 AM – 11:00 PM</span>
+              </div>
+              <p class="open-status-badge">🟢 Open for Dine-In & Takeaway</p>
+            </div>
+          </div>
+
+          <div class="loc-card">
+            <div class="loc-icon-circle">📞</div>
+            <div class="loc-card-content">
+              <h3>Direct Contact</h3>
+              <p>Phone: <a href="tel:+919876543210" class="loc-link">+91 98765 43210</a></p>
+              <p>Email: <a href="mailto:hello@brewandbloom.com" class="loc-link">hello@brewandbloom.com</a></p>
+              <p class="loc-sub-text">Prompt WhatsApp reply during café hours.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Embedded Interactive Map Placeholder / OpenStreetMap Demo -->
+        <div class="location-map-wrapper">
+          <div class="map-container">
+            <!-- Leaflet/OSM embed centered on Avinashi Road, Coimbatore with friendly pin -->
+            <iframe 
+              title="Brew & Bloom Café Coimbatore Location Map"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=76.9900%2C11.0200%2C77.0300%2C11.0450&amp;layer=mapnik&amp;marker=11.0315%2C77.0115" 
+              class="map-iframe"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+            
+            <div class="map-overlay-badge">
+              <span class="map-pin-icon">📍</span>
+              <div>
+                <strong>Brew & Bloom Café</strong>
+                <small>123, Avinashi Road, Coimbatore</small>
+              </div>
+            </div>
+          </div>
+          <div class="map-actions">
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=Avinashi+Road+Coimbatore" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn btn-outline btn-block"
+            >
+              <span>Open in Google Maps</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+            <small class="map-disclaimer text-center">Fictional demonstration business location for college project.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Social Connect Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <div class="contact-text-area">
+          <span class="section-tag-light">Get in Touch</span>
+          <h2 class="contact-title">Let's Connect & Catch Up</h2>
+          <p class="contact-desc">
+            Have questions regarding group bookings, private events, college study meetups, or dietary options? Send us a note or tap on our social channels.
+          </p>
+        </div>
+
+        <div class="contact-buttons-grid">
+          <a href="tel:+919876543210" class="contact-channel-btn">
+            <span class="channel-icon">📞</span>
+            <div class="channel-info">
+              <span class="channel-title">Direct Call</span>
+              <span class="channel-val">+91 98765 43210</span>
+            </div>
+          </a>
+
+          <a href="mailto:hello@brewandbloom.com" class="contact-channel-btn">
+            <span class="channel-icon">✉️</span>
+            <div class="channel-info">
+              <span class="channel-title">Email Us</span>
+              <span class="channel-val">hello@brewandbloom.com</span>
+            </div>
+          </a>
+
+          <a 
+            href="https://wa.me/919876543210?text=Hello%20Brew%20%26%20Bloom%20Caf%C3%A9%2C%20I%20would%20like%20to%20know%20more%20about%20your%20menu%20and%20table%20availability." 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="contact-channel-btn whatsapp-highlight"
+          >
+            <span class="channel-icon">💬</span>
+            <div class="channel-info">
+              <span class="channel-title">WhatsApp Chat</span>
+              <span class="channel-val">Quick Replies</span>
+            </div>
+          </a>
+
+          <a href="#home" class="contact-channel-btn social-link" onclick="alert('Demo notice: Instagram profile @brewandbloom_cbe is a fictional project handle.')">
+            <span class="channel-icon">📸</span>
+            <div class="channel-info">
+              <span class="channel-title">Instagram</span>
+              <span class="channel-val">@brewandbloom_cbe</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">☕</span>
+            <span class="logo-title">Brew & Bloom Café</span>
+          </div>
+          <p class="footer-tagline">“Fresh Brews. Good Food. Better Moments.”</p>
+          <p class="footer-about">
+            A fictional cozy café concept built as a real-world web solution for local coffee shops in Coimbatore.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Our Café</a></li>
+            <li><a href="#menu">Handcrafted Menu</a></li>
+            <li><a href="#special">Today's Special Deal</a></li>
+            <li><a href="#offers">Student & Work Combos</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Explore & Booking -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="#reservation">Reserve a Table</a></li>
+            <li><a href="#gallery">Ambience Gallery</a></li>
+            <li><a href="#testimonials">Customer Reviews</a></li>
+            <li><a href="#location">Find Our Location</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Business Details -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Visit Us</h4>
+          <p class="footer-contact-item">📍 123, Avinashi Road, Coimbatore, Tamil Nadu</p>
+          <p class="footer-contact-item">📞 +91 98765 43210</p>
+          <p class="footer-contact-item">✉️ hello@brewandbloom.com</p>
+          <p class="footer-hours">🕒 Mon–Fri 8AM–10PM | Sat–Sun 9AM–11PM</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          <p>&copy; <span id="current-year">2026</span> Brew & Bloom Café. All rights reserved.</p>
+          <p class="footer-academic-notice">
+            🎓 Demo website created strictly for academic/college project demonstration purposes.
+          </p>
+        </div>
+        <div class="footer-back-to-top">
+          <a href="#home" class="back-to-top-btn" aria-label="Back to top">
+            <span>Back to top ↑</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Contact Button (Feature #3) -->
+  <a 
+    href="https://wa.me/919876543210?text=Hello%20Brew%20%26%20Bloom%20Caf%C3%A9%2C%20I%20would%20like%20to%20know%20more%20about%20your%20menu%20and%20table%20availability." 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="floating-whatsapp-btn" 
+    id="whatsapp-btn"
+    aria-label="Chat with Brew & Bloom on WhatsApp"
+  >
+    <div class="whatsapp-icon-wrapper">
+      <!-- WhatsApp SVG Icon -->
+      <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+        <path d="M16 2.5C8.544 2.5 2.5 8.544 2.5 16c0 2.628.747 5.08 2.04 7.159L3 29l6.059-1.503C11.11 28.618 13.488 29.5 16 29.5c7.456 0 13.5-6.044 13.5-13.5S23.456 2.5 16 2.5zm0 24.583c-2.222 0-4.305-.724-6-1.954l-.43-.306-3.805.944.962-3.69-.328-.466A11.033 11.033 0 0 1 4.917 16c0-6.111 4.972-11.083 11.083-11.083 6.111 0 11.083 4.972 11.083 11.083 0 6.111-4.972 11.083-11.083 11.083zm6.388-8.272c-.35-.175-2.072-1.022-2.394-1.139-.322-.117-.556-.175-.789.175-.233.35-.904 1.139-1.108 1.372-.204.233-.408.263-.758.088a9.554 9.554 0 0 1-2.83-1.745 10.53 10.53 0 0 1-1.96-2.438c-.204-.35-.022-.539.153-.714.157-.157.35-.408.525-.612.175-.204.233-.35.35-.583.117-.233.058-.438-.029-.612-.088-.175-.789-1.9-.108-2.6-.312-.683-.628-.59-.861-.602-.223-.012-.478-.015-.733-.015-.255 0-.671.096-1.022.478-.35.383-1.342 1.312-1.342 3.2 0 1.888 1.374 3.712 1.567 3.974.193.262 2.704 4.13 6.55 5.79 3.847 1.66 3.847 1.107 4.547 1.035.7-.073 2.25-.919 2.569-1.808.32-.889.32-1.65.224-1.808-.096-.158-.33-.252-.68-.427z"/>
+      </svg>
+    </div>
+    <span class="whatsapp-tooltip">Chat with Café Host</span>
+  </a>
+
+  <!-- JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
