@@ -846,9 +846,15 @@
 
           <!-- Right Interactive Form -->
           <div class="reservation-form-box">
-            <form id="reservation-form" class="reservation-form" novalidate>
+            <form id="reservation-form" class="reservation-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
               <h3 class="form-heading">Book a Table</h3>
               <p class="form-subheading">Fill in the quick details below for demo reservation:</p>
+
+              <!-- Web3Forms Free Email Forwarding Configuration -->
+              <!-- Replace YOUR_WEB3FORMS_ACCESS_KEY with your free access key from https://web3forms.com -->
+              <input type="hidden" name="access_key" id="w3f-access-key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+              <input type="hidden" name="subject" value="☕ New Table Reservation - Brew & Bloom Café">
+              <input type="hidden" name="from_name" value="Brew & Bloom Reservation System">
 
               <!-- Name Field -->
               <div class="form-group">
@@ -876,6 +882,18 @@
                   required
                 >
                 <div class="error-msg" id="error-phone">Please enter a valid 10-digit phone number.</div>
+              </div>
+
+              <!-- Email Field (Optional for email confirmation) -->
+              <div class="form-group">
+                <label for="res-email">Email Address <span class="opt">(Optional for email confirmation)</span></label>
+                <input 
+                  type="email" 
+                  id="res-email" 
+                  name="email" 
+                  class="form-control" 
+                  placeholder="e.g. guest@example.com"
+                >
               </div>
 
               <!-- Date & Time Row -->

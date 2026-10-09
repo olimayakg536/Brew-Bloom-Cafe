@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Form submission handler
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       let isValid = true;
@@ -231,27 +231,83 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
+      const submitBtn = document.getElementById('submit-btn');
+      const originalBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Sending Request...</span> <span style="font-size: 1.1rem;">⏳</span>';
+      }
+
       // Collect data for summary
       const name = fields.name.input.value.trim();
       const phone = fields.phone.input.value.trim();
+      const email = document.getElementById('res-email')?.value.trim();
       const date = fields.date.input.value;
       const time = fields.time.input.value;
       const guests = fields.guests.input.value;
       const seating = document.getElementById('res-seating')?.value || 'Standard Table';
       const notes = document.getElementById('res-notes')?.value.trim();
+      const accessKey = document.getElementById('w3f-access-key')?.value.trim();
+
+      let emailStatusHtml = '';
+
+      // Check if user has entered an active Web3Forms key
+      const isRealKey = accessKey && accessKey !== 'YOUR_WEB3FORMS_ACCESS_KEY';
+
+      if (isRealKey) {
+        try {
+          const formData = new FormData(form);
+          const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+          });
+          const result = await response.json();
+
+          if (response.ok && result.success) {
+            emailStatusHtml = `
+              <div style="margin-top: 12px; padding: 10px 14px; background-color: #dcfce7; border-radius: 8px; color: #15803d; font-size: 0.86rem; font-weight: 600;">
+                ✓ Real Email Dispatched: A notification was delivered directly to your inbox via Web3Forms!
+              </div>
+            `;
+          } else {
+            emailStatusHtml = `
+              <div style="margin-top: 12px; padding: 10px 14px; background-color: #fef9c3; border-radius: 8px; color: #854d0e; font-size: 0.86rem;">
+                ⚠️ Email Notice: ${result.message || 'Check your Web3Forms access key.'}
+              </div>
+            `;
+          }
+        } catch (err) {
+          emailStatusHtml = `
+            <div style="margin-top: 12px; padding: 10px 14px; background-color: #fef9c3; border-radius: 8px; color: #854d0e; font-size: 0.86rem;">
+              ⚠️ Network Notice: Unable to reach email service (Offline or connection error). Request logged locally.
+            </div>
+          `;
+        }
+      } else {
+        // Simulated sending delay for demo
+        await new Promise((r) => setTimeout(r, 600));
+        emailStatusHtml = `
+          <div style="margin-top: 12px; padding: 10px 14px; background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; color: #1e40af; font-size: 0.86rem;">
+            💡 <strong>Email Forwarding Ready:</strong> Paste your free Web3Forms access key into <code>index.html</code> to receive instant emails in your Gmail inbox!
+          </div>
+        `;
+      }
 
       // Render summary
       if (summaryBox) {
         summaryBox.innerHTML = `
           <strong>📋 Booking Request Summary:</strong><br>
-          • <strong>Guest:</strong> ${name} (${phone})<br>
+          • <strong>Guest:</strong> ${name} (${phone}${email ? ` | ${email}` : ''})<br>
           • <strong>Date & Time:</strong> ${date} at ${time}<br>
           • <strong>Party Size:</strong> ${guests} (${seating})<br>
           ${notes ? `• <strong>Special Request:</strong> <em>"${notes}"</em><br>` : ''}
-          <div style="margin-top: 10px; font-size: 0.82rem; color: #15803d; font-weight: 600;">
-            ✓ Status: Demo Request Logged Successfully
-          </div>
+          ${emailStatusHtml}
         `;
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHtml;
       }
 
       // Hide form, show confirmation
