@@ -127,3 +127,9 @@ For a production deployment or future academic phases, the following additions c
 - **Author:** College Project Submission
 - **Demonstration Purpose:** Academic Web Development & Local Business Solution Pitch
 - **License:** Open for Educational Use
+
+---
+
+## 🌐 Live Demo
+
+**[Click here to visit the live website](https://brew-and-bloom-cafe.onrender.com)**
